@@ -14,7 +14,7 @@ The objective is to simulate a real-world scenario where **120,000 users** inter
 - **Timer**: Gaussian Random Timer
   - *Deviation*: 2000ms
   - *Constant Delay*: 500ms
-* Thread Properties
+* **Thread Properties**
 ```bash
 > Loop count          = 1	
 > Number of user:     = 120,000
@@ -48,12 +48,12 @@ To ensure clean reporting, delete any existing **Report** folder and **.jtl** lo
 
 **For Load Test:**
 ```bash
-   jmeter -n -t Booking_Load_Stress.jmx  -l /Report/Booking_load.jtl -e -o /Report/LoadTest
+   jmeter -n -t Booking_Load.jmx  -l Report/Booking_load.jtl -e -o Report/LoadTest
 ```
 
 **For Stress Test:**
 ```bash
-jmeter -n -t Booking_Load_Stress.jmx  -l /Report/Booking_stress.jtl -e -o /Report/StressTest
+jmeter -n -t Booking_Stress.jmx  -l Report/Booking_stress.jtl -e -o Report/StressTest
 ```
 
 * -n: Run in non-GUI mode.
@@ -72,11 +72,11 @@ jmeter -n -t Booking_Load_Stress.jmx  -l /Report/Booking_stress.jtl -e -o /Repor
 ### 1. JMeter html Report:
 **1.1 Load Test**
 
-![image2](https://drive.google.com/uc?export=view&id=1vP2-MvohkZq8lL4s7-F3jKt5EAQFx0fk)
+![image2](https://drive.google.com/uc?export=view&id=1FQUhxgVK_oXcphzFpTdI96S5O-MtnEFU)
 
 **1.2 Stress Test**
 
-### 2. Manual Tested Report
+### 2. Excel Report
 **2.1 Load Test**
 
 ![image1](https://drive.google.com/uc?export=view&id=1hzG-mVm-PuooN_4IGC1pWUc7l0IHiydk)

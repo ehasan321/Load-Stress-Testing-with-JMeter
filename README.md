@@ -48,12 +48,12 @@ To ensure clean reporting, delete any existing **Report** folder and **.jtl** lo
 
 **For Load Test:**
 ```bash
-   jmeter -n -t Booking_Load_Stress.jmx  -l Booking_load.jtl -e -o ./Report/LoadTest
+   jmeter -n -t Booking_Load_Stress.jmx  -l /Report/Booking_load.jtl -e -o /Report/LoadTest
 ```
 
 **For Stress Test:**
 ```bash
-jmeter -n -t Booking_Load_Stress.jmx  -l Booking_stress.jtl -e -o ./Report/StressTest
+jmeter -n -t Booking_Load_Stress.jmx  -l /Report/Booking_stress.jtl -e -o /Report/StressTest
 ```
 
 * -n: Run in non-GUI mode.
@@ -67,41 +67,22 @@ jmeter -n -t Booking_Load_Stress.jmx  -l Booking_stress.jtl -e -o ./Report/Stres
 
 
 
-## Test Execution Plan
-
-### 1. Load Test (Todo 1)
-The load test is designed to verify if the server can handle the required throughput. We conduct this in three incremental time steps to monitor resource consumption.
-
-| Step | Duration | Target |
-| :--- | :--- | :--- |
-| **Phase 1** | 5 Minutes | Initial Load Verification |
-| **Phase 2** | 10 Minutes | Sustained Performance Check |
-| **Phase 3** | 20 Minutes | Full Load Capacity Test |
-
-
-
-
-
-### 2. Stress Test (Todo 2)
-Performed only after a successful Load Test. The goal is to identify the **Bottleneck Throughput** by gradually increasing the number of users until the server response time degrades or error rates spike.
-
----
-
 
 ## Summary & Statistics
 ### 1. JMeter html Report:
 **1.1 Load Test**
 
+![image2](https://drive.google.com/uc?export=view&id=1vP2-MvohkZq8lL4s7-F3jKt5EAQFx0fk)
 
 **1.2 Stress Test**
 
 ### 2. Manual Tested Report
 **2.1 Load Test**
 
+![image1](https://drive.google.com/uc?export=view&id=1hzG-mVm-PuooN_4IGC1pWUc7l0IHiydk)
 
 **2.2 Stress Test**
-![image1](https://drive.google.com/uc?export=view&id=17uFMBSLyJuXG2cj-pVW7WlCqXJiaxD2d)
-![image2](https://drive.google.com/uc?export=view&id=1vP2-MvohkZq8lL4s7-F3jKt5EAQFx0fk)
+
 
 
 
@@ -111,7 +92,7 @@ Performed only after a successful Load Test. The goal is to identify the **Bottl
 
 * **Scripted End-to-End User Flow:** Developed a JMeter test plan covering Auth Login, Dynamic Booking Creation (using random data), and Search Booking.
 * **Realistic Load Simulation:** Configured a **Gaussian Random Timer** to mimic real-world user behavior and "think time."
-* **Incremental Load Testing:** Conducted a 3-step load test (5, 10, and 20-minute intervals) to validate server stability for 120,000 users.
+* **Incremental Load Testing:** Conducted a 3-step load test (1, 5, 9, 10 and 15-minute intervals) to validate server stability for 120,000 users.
 * **Stress & Bottleneck Analysis:** Performed stress testing to identify the server's breaking point and maximum throughput capacity.
 * **Automated Reporting:** Generated **HTML Dashboards** and structured **Excel reports** for performance metric analysis (Latency, Error Rate, and TPS).
 

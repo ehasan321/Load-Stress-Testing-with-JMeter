@@ -72,18 +72,22 @@ jmeter -n -t Booking_Stress.jmx  -l Report/Booking_stress.jtl -e -o Report/Stres
 ### 1. JMeter html Report:
 **1.1 Load Test**
 
-![image2](https://drive.google.com/uc?export=view&id=1FQUhxgVK_oXcphzFpTdI96S5O-MtnEFU)
+![image1.1](https://drive.google.com/uc?export=view&id=1FQUhxgVK_oXcphzFpTdI96S5O-MtnEFU)
 
 **1.2 Stress Test**
 
-### 2. Excel Report
+![image1.2](https://drive.google.com/uc?export=view&id=17WZvlM_XGvdAT9KelFh40g622TEVY0hr)
+
+
+
+### 2. Excel Report:
 **2.1 Load Test**
 
-![image1](https://drive.google.com/uc?export=view&id=1hzG-mVm-PuooN_4IGC1pWUc7l0IHiydk)
+![image2.1](https://drive.google.com/uc?export=view&id=1hzG-mVm-PuooN_4IGC1pWUc7l0IHiydk)
 
 **2.2 Stress Test**
 
-
+![image2.2](https://drive.google.com/uc?export=view&id=1PbHkUI-JqBHaX0bSMgOuxd_iYzAp0TD3)
 
 
 ---

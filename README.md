@@ -48,12 +48,12 @@ To ensure clean reporting, delete any existing **Report** folder and **.jtl** lo
 
 **For Load Test:**
 ```bash
-   jmeter -n -t Booking_Load.jmx  -l Report/Booking_load.jtl -e -o Report/LoadTest
+   jmeter -n -t Booking.jmx  -l Report/Booking_load.jtl -e -o Report/LoadTest
 ```
 
 **For Stress Test:**
 ```bash
-jmeter -n -t Booking_Stress.jmx  -l Report/Booking_stress.jtl -e -o Report/StressTest
+jmeter -n -t Booking.jmx  -l Report/Booking_stress.jtl -e -o Report/StressTest
 ```
 
 * -n: Run in non-GUI mode.
@@ -65,11 +65,10 @@ jmeter -n -t Booking_Stress.jmx  -l Report/Booking_stress.jtl -e -o Report/Stres
 
 
 
-
-
-
 ## Summary & Statistics
+
 ### 1. JMeter html Report:
+
 **1.1 Load Test**
 
 ![image1.1](https://drive.google.com/uc?export=view&id=1FQUhxgVK_oXcphzFpTdI96S5O-MtnEFU)
@@ -96,7 +95,7 @@ jmeter -n -t Booking_Stress.jmx  -l Report/Booking_stress.jtl -e -o Report/Stres
 
 * **Scripted End-to-End User Flow:** Developed a JMeter test plan covering Auth Login, Dynamic Booking Creation (using random data), and Search Booking.
 * **Realistic Load Simulation:** Configured a **Gaussian Random Timer** to mimic real-world user behavior and "think time."
-* **Incremental Load Testing:** Conducted a 3-step load test (1, 5, 9, 10 and 15-minute intervals) to validate server stability for 120,000 users.
+* **Incremental Load Testing:** Conducted a 3-step load test (1, 5, 9, 10, 14 and 15, 20 minute intervals) to validate server stability for 120,000 users.
 * **Stress & Bottleneck Analysis:** Performed stress testing to identify the server's breaking point and maximum throughput capacity.
 * **Automated Reporting:** Generated **HTML Dashboards** and structured **Excel reports** for performance metric analysis (Latency, Error Rate, and TPS).
 

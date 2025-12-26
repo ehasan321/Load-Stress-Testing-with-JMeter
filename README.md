@@ -89,7 +89,7 @@ jmeter -n -t Booking.jmx  -l Report/Booking_stress.jtl -e -o Report/StressTest
 ![image2.2](https://drive.google.com/uc?export=view&id=1PbHkUI-JqBHaX0bSMgOuxd_iYzAp0TD3)
 
 
----
+
 
 ## This is what I have done in this project
 
